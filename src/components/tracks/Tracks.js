@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
-
+import {Consumer} from '../../context';
 /**
  * Tracks
  */
 export class Tracks extends Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <div>
-        <h1> Tracks </h1>
-      </div>
+      <Consumer>
+        {value => {
+          console.log(value);
+          return <h1>Tracks</h1>
+          
+        }}
+      </Consumer>
     );
   }
 }
