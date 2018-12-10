@@ -10,7 +10,7 @@ export class Tracks extends Component { // eslint-disable-line react/prefer-stat
         {value => {
           //console.log(value);
           const {track_list,heading} = value;
-        if(track_list == undefined || track_list==0){
+        if(track_list === undefined || track_list===0){
             return <Spinner />
         }else{
               return (
